@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json()); // parse from req.body
 
-app.use("/api/auth",authRoutes);
+app.use("/api/auth", authRoutes);
  
 app.listen(PORT,() => {
   connectToMongoDB();
